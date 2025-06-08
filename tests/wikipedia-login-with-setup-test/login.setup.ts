@@ -1,5 +1,5 @@
 import { test as setup } from '@playwright/test';
-import {STORAGE_STATE_PATH} from '../playwright.config';
+import {STORAGE_STATE_PATH} from '../../playwright.config';
 import dotenv from 'dotenv';
 import path from 'path';
 
