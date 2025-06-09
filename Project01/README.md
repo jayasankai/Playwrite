@@ -4,11 +4,16 @@ A project to demonstrate basic console commands for creating, running, and debug
 
 ## Getting Started
 
-### 1. Install Dependencies
+### 1. Workspace setup
+```bash
+npm init playwright@latest
+```
+
+### 2. Install Dependencies
 ```bash
 npm install
 ```
-### 2. Configure Environment Variables
+### 3. Configure Environment Variables
 
 Create a `.env` file in the project root or `tests` directory with your credentials:
 
@@ -17,7 +22,7 @@ USERNAME=your_wikipedia_username
 PASSWORD=your_wikipedia_password
 ```
 
-### 3. Run Tests
+### 4. Run Tests
 
 To execute all Playwright tests:
 
@@ -25,7 +30,7 @@ To execute all Playwright tests:
 npx playwright test
 ```
 
-### 4. View Test Report
+### 5. View Test Report
 
 After running tests, view the HTML report:
 
@@ -33,7 +38,7 @@ After running tests, view the HTML report:
 npx playwright show-report
 ```
 
-### 5. Debugging
+### 6. Debugging
 
 To run a test in headed mode with debugging:
 
