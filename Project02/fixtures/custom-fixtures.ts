@@ -1,11 +1,13 @@
-import { test as base } from '@playwright/test';
-import { TodoPage } from '../pages/todo-page';
-import { SettingsPage } from '../pages/settings-page';
+import { test as base } from "@playwright/test";
+import { TodoPage } from "../pages/todo-page";
+import { SettingsPage } from "../pages/settings-page";
+import { PlaywrightDevPage } from "../pages/playwright-dev-page";
 
 // Declare the types of your fixtures.
 type CustomFixtures = {
   todoPage: TodoPage;
   settingsPage: SettingsPage;
+  playwrightDevPage: PlaywrightDevPage;
 };
 
 // Extend base test by providing "todoPage" and "settingsPage".
@@ -15,8 +17,8 @@ export const test = base.extend<CustomFixtures>({
     // Set up the fixture.
     const todoPage = new TodoPage(page);
     await todoPage.goto();
-    await todoPage.addToDo('item1');
-    await todoPage.addToDo('item2');
+    await todoPage.addToDo("item1");
+    await todoPage.addToDo("item2");
 
     // Use the fixture value in the test.
     await use(todoPage);
@@ -26,7 +28,16 @@ export const test = base.extend<CustomFixtures>({
   },
 
   settingsPage: async ({ page }, use) => {
-    await use(new SettingsPage(page));
+    const settingsPage = new SettingsPage(page);
+    await settingsPage.goto();
+    await use(settingsPage);
+  },
+
+  playwrightDevPage: async ({ page }, use) => {
+    const playwrightDevPage = new PlaywrightDevPage(page);
+    await playwrightDevPage.goto();
+    await use(playwrightDevPage);
   },
 });
-export { expect } from '@playwright/test';
+
+export { expect } from "@playwright/test";
