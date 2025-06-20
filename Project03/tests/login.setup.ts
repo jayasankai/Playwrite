@@ -1,4 +1,4 @@
-import { test as setup, expect } from "../fixtures/page-fixtures";
+import { test as setup, expect } from "../fixtures/login-fixture";
 import { STORAGE_STATE_PATH } from '../playwright.config';
 
 setup('Login setup', async ({ loginPage }) => {

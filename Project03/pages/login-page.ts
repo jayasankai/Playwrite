@@ -39,8 +39,14 @@ export class LoginPage {
   }
 
   async isLoggedIn(): Promise<boolean> {
-    // wait for the page to load after login
-    await this.page.waitForLoadState("networkidle");
+    // wait for the page to load after login for headless browsers
+    await this.profileMenuButton.waitFor({
+      state: "visible",
+      timeout: 10000, // wait up to 10 seconds for the profile menu button
+    });
+
+    // Uncomment the line below if you want to wait for network idle state
+    // await this.page.waitForLoadState("networkidle");
 
     // Ensure no viewSignInButton and Toggle profile menu button is visible
     const isViewSignInButtonVisible = await this.viewSignInButton.isVisible();

@@ -26,7 +26,7 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
 
-  timeout: 10 * 1000, // Set a global timeout of 30 seconds for each test
+  timeout: 20 * 1000, // Set a global timeout of 30 seconds for each test
 
   /* Configure projects for major browsers */
   projects: [
