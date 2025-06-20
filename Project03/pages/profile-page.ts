@@ -9,12 +9,17 @@ export class ProfilePage {
   constructor(public readonly page: Page) {
     this.myAccountLink = this.page
       .locator("#account-section")
-      .getByText("My Account", { exact: true });       
+      .getByText("My Account", { exact: true });
+    
     this.myAccountText = this.page.getByText("My Profile").first();
     this.profileNickname = this.page.getByRole("textbox", {
       name: "Public Profile Nickname",
     });
-    this.logoutLink = this.page.locator('#logout-link');
+
+    // Access the logout link from the top navigation bar iframe
+    this.logoutLink = this.page
+      .frameLocator("#top-nav-bar-iframe")
+      .locator("#logout-link");
   }
 
   async goto() {
