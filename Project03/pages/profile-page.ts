@@ -4,17 +4,17 @@ export class ProfilePage {
   private readonly myAccountLink: Locator;
   private readonly myAccountText: Locator;
   private readonly profileNickname: Locator;
-  private readonly logoutButton: Locator;
+  private readonly logoutLink: Locator;
 
   constructor(public readonly page: Page) {
     this.myAccountLink = this.page
       .locator("#account-section")
-      .getByText("My Account", { exact: true });
+      .getByText("My Account", { exact: true });       
     this.myAccountText = this.page.getByText("My Profile").first();
     this.profileNickname = this.page.getByRole("textbox", {
       name: "Public Profile Nickname",
     });
-    this.logoutButton = this.page.getByRole("link", { name: "Logout" });
+    this.logoutLink = this.page.locator('#logout-link');
   }
 
   async goto() {
@@ -34,6 +34,6 @@ export class ProfilePage {
   }
 
   async logout() {
-    await this.logoutButton.click();
+    await this.logoutLink.click();
   }
 }

@@ -1,10 +1,9 @@
 import { test, expect } from "../fixtures/page-fixtures";
-import { STORAGE_STATE_PATH } from '../playwright.config';
+import { STORAGE_STATE_PATH } from "../playwright.config";
 
-test.use({storageState: STORAGE_STATE_PATH});
+test.use({ storageState: STORAGE_STATE_PATH });
 
 test.describe("W3Schools login and search", () => {
-
   test("profile page has My Account text", async ({ profilePage }) => {
     await profilePage.goto();
     await profilePage.clickMyAccountLink();
@@ -17,18 +16,9 @@ test.describe("W3Schools login and search", () => {
     expect(await profilePage.isProfileNicknameVisible()).toBe(true);
   });
 
-  // test("welcome page has header message", async ({ dashboardPage }) => {
-  //   expect(await dashboardPage.isHeaderMessageVisible()).toBe(true);
-  // });
-
-  // test("welcome page has welcome message", async ({ dashboardPage }) => {
-  //   // welcome message should be visible after login
-  //   expect(await dashboardPage.isWelcomeMessageVisible()).toBe(true);
-  // });
-
-  // test("user logout button whould work", async ({ dashboardPage }) => {
-  //   await dashboardPage.clickLogout();
-  //   // welcome message should not be visible after logout
-  //   expect(await dashboardPage.isWelcomeMessageVisible()).toBe(false);
-  // });
+  test("user logout button whould work", async ({ profilePage }) => {
+    await profilePage.goto();
+    await profilePage.logout();
+    expect(await profilePage.isMyAccountTextVisible()).toBe(false);
+  });
 });
