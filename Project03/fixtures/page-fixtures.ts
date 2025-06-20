@@ -10,13 +10,14 @@ export const test = base.extend<{
   profilePage: ProfilePage;
   dashboardPage: DashboardPage;
 }>({
-  loginPage: async ({ page }, use) => {
+  loginPage: async ({ page }, use, testInfo) => {
     const loginPage = new LoginPage(page);
-    await loginPage.goto();
-    await loginPage.login("student", "Password123");
-    // Save the storage state after login
-    await page.context().storageState({ path: STORAGE_STATE_PATH });
-
+    
+    // Only perform login if running the setup project
+    if (testInfo.project.name === 'setup') {
+      await loginPage.goto();
+      await loginPage.login(process.env.EMAIL || '', process.env.PASSWD || '');
+    }
     await use(loginPage);
   },
   profilePage: async ({ page }, use) => {

@@ -18,7 +18,7 @@ export class ProfilePage {
   }
 
   async goto() {
-    await this.page.goto("https://www.w3schools.com/");
+    await this.page.goto("https://profile.w3schools.com/profile");
   }
 
   async clickMyAccountLink() {

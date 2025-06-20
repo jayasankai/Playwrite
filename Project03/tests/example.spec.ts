@@ -1,5 +1,7 @@
 import { test, expect } from "../fixtures/page-fixtures";
+import { STORAGE_STATE_PATH } from '../playwright.config';
 
+test.use({storageState: STORAGE_STATE_PATH});
 
 test.describe("W3Schools login and search", () => {
 

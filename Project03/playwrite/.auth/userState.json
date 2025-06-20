@@ -1,14 +1,84 @@
 {
   "cookies": [
     {
+      "name": "refreshToken",
+      "value": "69cc8ed0-7bb8-4e66-926d-3588c268c8c9",
+      "domain": ".profile.w3schools.com",
+      "path": "/api/user/session",
+      "expires": 1752961583.630482,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
       "name": "__cf_bm",
-      "value": "QhwqgWgkc4TLWwAsIbOJ4GkAA9tt3kEUpkIwjaQaac4-1750329883-1.0.1.1-Xvl4sRUuPSXfO0AlJ4hh_ySmX12RA7jveGL_59g8qdhDNlJMjgX3ZfFhN6MaH4MDdZiBK02a_VlJuD9L2dBM8ay5i5kcaRK.xVySUSs8lhI",
+      "value": "gZddrkfLSyGaVtJ0PFde5_ftlL0AGqQuK50YO4w36zE-1750369879-1.0.1.1-Tr5zGZii4O6HTA6TBT3wGDuUbTsJGgGTNRhde5lVSvYsxngL_LlcLvb1wxMncElqF_j6ol2iB088Lqkrm9amLOTNIb8KH4Wf4KDiNZsTGns",
       "domain": ".snigelweb.com",
       "path": "/",
-      "expires": 1750331683.633185,
+      "expires": 1750371679.469137,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1760176745.1750369881",
+      "domain": ".w3schools.com",
+      "path": "/",
+      "expires": 1784929884.786917,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "accessToken",
+      "value": "eyJraWQiOiJQS0tER0N2cFwvdlpVa1NEZDByem9NRTFEbWNDdElFM3o1V2ZmT0RMWWxJTT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI4OThhZWYyYS1mM2I3LTQxMTgtODU3OS0xMzIxNjI1YWVmOTQiLCJldmVudF9pZCI6ImVhOGMxM2IzLTJjN2ItNDk5MS1iODQyLTljNDhhMjgxYjAzMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NTAzNjk4ODIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX3VHOVNHWDdXZCIsImV4cCI6MTc1MDQxMzA4MiwiaWF0IjoxNzUwMzY5ODgyLCJqdGkiOiJhMTg2ZmUxMC0yMzA3LTQ3YzEtOTZlMS0zNDFhMzgxZjMxZTciLCJjbGllbnRfaWQiOiJkMWdycW1sMGVtaDd2b3RrYjBndHJybjAiLCJ1c2VybmFtZSI6IjM2YmJhYmMxLTNhNDUtNDE0Yy04Y2JjLWJjYzJjYzk2MzEyZCJ9.PADd9LQ3zCJ97H4D8vzUyqKk_vGNDQjyi6u7aNi7dlqjnEwyFUux-sxz8efXDB8dEwai7azco_qabRICjpyR5ET0jlwjlcpRR9n2SBSDNCP8b2zLZQkDoWwWxa4XmSvnPNFeBDdMAk2yod9Y9nfxt-FOp96N4cTp4nzIbpD6Pjg3BQQ7zHtwz5EOe0jzT3Qy95teXTSRa7hbkb2vD9WZOM5Arx_k3MJbWxW_OrDuIk5uwR4MakXD-sLWqNA51S337c6jUbyfkZvlSAMaDdkb1ifU6HUwLZOwILxm2Q4x7Ph62PtkKACL_OYzCMAh963eyJUXgzJWcVTzi_J5EQhySg",
+      "domain": ".w3schools.com",
+      "path": "/",
+      "expires": 1752961582,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "userSession",
+      "value": "1",
+      "domain": ".w3schools.com",
+      "path": "/",
+      "expires": 1758145882,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "userSessionMeta",
+      "value": "eyJpZCI6ImJjY2EyMmI3LWRjZTUtNDg3Ni1hZTY1LTNjNjJjMGViYjUyNCIsImlzcyI6MTc1MDM2OTg4MiwiYXRleHAiOjE3NTA0MTI3ODEsInJ0ZXhwIjoxNzUyOTYxNTgyfQ==",
+      "domain": ".w3schools.com",
+      "path": "/",
+      "expires": 1758145882,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "__c_u_i_1",
+      "value": "uFWblViMyUyMBViMyoUY5ViMyUiMDViMywmbh1WZlIjMlMTQlIjMJxGbh52ZlIjMlIzQlIjMl1WYpxWJyITJzEUJyITeypWY5F2ch52ahVCNwkXYo92buM2btViMyUiMDViMyAHbh5WJyITJzEUJyIjZyVWZlIjMlIzQlIjMpN3clIjMlMTQxcTNwMjN5gDOzUiMDViMy42bVB3clxGblIjMlMTQmFGbzVWJyMUJyITYkZkclVWJyITJzEkZhx2clViMDViMy8VZ4BXJyITJzEUM3UjM5YTM1gjMlcDRQJ3IUJyIjZ",
+      "domain": ".w3schools.com",
+      "path": "/",
+      "expires": 1752961582,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_ga_9YNMTB56NB",
+      "value": "GS2.1.s1750369881$o1$g1$t1750369884$j57$l0$h0",
+      "domain": ".w3schools.com",
+      "path": "/",
+      "expires": 1784929884.78672,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
     }
   ],
   "origins": [
@@ -16,16 +86,36 @@
       "origin": "https://www.w3schools.com",
       "localStorage": [
         {
-          "name": "preferredmode",
-          "value": "null"
+          "name": "CognitoIdentityServiceProvider.d1grqml0emh7votkb0gtrrn0.36bbabc1-3a45-414c-8cbc-bcc2cc96312d.accessToken",
+          "value": "eyJraWQiOiJQS0tER0N2cFwvdlpVa1NEZDByem9NRTFEbWNDdElFM3o1V2ZmT0RMWWxJTT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI4OThhZWYyYS1mM2I3LTQxMTgtODU3OS0xMzIxNjI1YWVmOTQiLCJldmVudF9pZCI6ImVhOGMxM2IzLTJjN2ItNDk5MS1iODQyLTljNDhhMjgxYjAzMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NTAzNjk4ODIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX3VHOVNHWDdXZCIsImV4cCI6MTc1MDQxMzA4MiwiaWF0IjoxNzUwMzY5ODgyLCJqdGkiOiJhMTg2ZmUxMC0yMzA3LTQ3YzEtOTZlMS0zNDFhMzgxZjMxZTciLCJjbGllbnRfaWQiOiJkMWdycW1sMGVtaDd2b3RrYjBndHJybjAiLCJ1c2VybmFtZSI6IjM2YmJhYmMxLTNhNDUtNDE0Yy04Y2JjLWJjYzJjYzk2MzEyZCJ9.PADd9LQ3zCJ97H4D8vzUyqKk_vGNDQjyi6u7aNi7dlqjnEwyFUux-sxz8efXDB8dEwai7azco_qabRICjpyR5ET0jlwjlcpRR9n2SBSDNCP8b2zLZQkDoWwWxa4XmSvnPNFeBDdMAk2yod9Y9nfxt-FOp96N4cTp4nzIbpD6Pjg3BQQ7zHtwz5EOe0jzT3Qy95teXTSRa7hbkb2vD9WZOM5Arx_k3MJbWxW_OrDuIk5uwR4MakXD-sLWqNA51S337c6jUbyfkZvlSAMaDdkb1ifU6HUwLZOwILxm2Q4x7Ph62PtkKACL_OYzCMAh963eyJUXgzJWcVTzi_J5EQhySg"
+        },
+        {
+          "name": "CognitoIdentityServiceProvider.d1grqml0emh7votkb0gtrrn0.LastAuthUser",
+          "value": "36bbabc1-3a45-414c-8cbc-bcc2cc96312d"
+        },
+        {
+          "name": "CognitoIdentityServiceProvider.d1grqml0emh7votkb0gtrrn0.36bbabc1-3a45-414c-8cbc-bcc2cc96312d.idToken",
+          "value": "eyJraWQiOiJkaGZFUDJ0cDZ5Qk9mMVJQUkZteFY2elJKU2Y3bHp1MHR3SUVMekdGUW9jPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4OThhZWYyYS1mM2I3LTQxMTgtODU3OS0xMzIxNjI1YWVmOTQiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV91RzlTR1g3V2QiLCJjb2duaXRvOnVzZXJuYW1lIjoiMzZiYmFiYzEtM2E0NS00MTRjLThjYmMtYmNjMmNjOTYzMTJkIiwiY3VzdG9tOmlzRmlyc3RMb2dpbiI6ImZhbHNlIiwiZ2l2ZW5fbmFtZSI6IkpheSIsImN1c3RvbTptZXRhIjoie30iLCJhdWQiOiJkMWdycW1sMGVtaDd2b3RrYjBndHJybjAiLCJldmVudF9pZCI6ImVhOGMxM2IzLTJjN2ItNDk5MS1iODQyLTljNDhhMjgxYjAzMyIsInRva2VuX3VzZSI6ImlkIiwiY3VzdG9tOnJlY2FwdGNoYV90b2tlbiI6IntcInZhbHVlXCI6XCIwM0FGY1dlQTVUUC1oYXdKTTNKM05ybE1aWGRzZG5pNFVUY3NhUXUyLVZiaHZhUnJvTlBXdnNUY25hblRveDNTQV9fZE9NMDJ2SmZnVzk0ZU40R1ZHOC1YeEpJVWNQMFpMMHlkaGx0T0RXRXRKZTQzSi15dU5feW1vc244UUVKQzRNV3hHbmwwajBLT3RIMEU4d0Z6Y0JTeGRGcG1Qc1VfVnlrdkpNYklrVVV3QlRjRENvQV9CR0xzTWhSSGJVZE9xUWJxSllIVHpuNlBVeFVkcTR4NHNCZ2tVS1M3N0ozcmZvODJJcE0weFJxUTBlMGdtM2huTFY5blZJYUlRZXNmU2M3VG1vSzRaX1BWOTNPVEtPN2FLR1FraHNrdmYxLW1NUDlDdzg2dmFnaEJ0SGkwUlpEMk4ybV9JZi1hdFQwMEZFQ2VRTEc2OXJJRnJsd2Y4dVQ2Wi1pVWNTMGVsTG5XT1hRSkFRaVJ4YkRSZE1aRjlfd0NyZl9EOGFRdmJGXzZWTV9uZzJMMndWRlk0Z1NqNFU1azYxOGE0dDBlNEh2c2xSSV8ySkp4MjJIOVNVbjNKYllSZXV4TThoV2hsWlh2azRJSHduX0l2OVV2b3VKUHNFYzFnbkhwZldkNGtyNkNQYlFwQUcwYUtfMi1kYktlT0NNRWNfMVlKSllPcWhjN24tZlNXdXhPemZvcFBCbklQdktqQm1vbjNzUmdKY3NHZi05Mmg0dTlEVXJpWUF1Tjl1d1NhZVI1U2t4ZUM5bE9JLTk4endkaW95MjJxS3NTN21DbWhHQ3pJRnFUWnI0OG9ENGpnMHlOMWhSYkNNVzlmX2FGNmF6TmJSVXZvVkRILURicVZlbGR0MWgySkQ3bGg1TzI3b0RQQTU4ZGtyS3YxM2s4al9HbXh4elY1REFOVWt0bFRhYl9vcjJ1RjJUbUl5N0pZbzRvWHNmcnNVSVRHa1Zjc3ZYblY5REZlNTk3UFpxX1kzT05GRWhhTF83eURaa1MxRG0tUnVNdWFUYTVXTFlqdVpBWGx4cmdfUEdSWkYzWUV0N01yRGZMb1ZBSG5TcG1aeXliV3lXM3M0SE8yZjk4Tm1XaUlhZC1HNWR3WHNGYTNrSG5Cbm1qbG9rbk9GQ2hGWFdLX1RPSEYxYjlkZWVxQ3hEUlFuaGxNb0ZxZjJPM0ZOMU9yaE93OXdmMGVHUUJvRFpVUTgySWszMFJ5TV9LbEFkZkVtTlhtT09jbG1iYm55Qm5XSko4R29XdVpPNnpjNVRYNFwiLFwib3JpZ2luXCI6XCJSZUNhcHRjaGFWMlwiLFwiYWN0aW9uXCI6XCJzaWduVXBVc2VyXCJ9IiwiYXV0aF90aW1lIjoxNzUwMzY5ODgyLCJleHAiOjE3NTA0MTMwODIsImlhdCI6MTc1MDM2OTg4MiwiZmFtaWx5X25hbWUiOiJJbGxhbmciLCJlbWFpbCI6InlyamF5YXNhbmthQHlhaG9vLmNvbSJ9.nt0fqiV2SMJGB9wiM9jy3gK_Qt9Wm337aA0L-bGHBRDgj4YrRkPlbJfL6bnvA8yTgVw3du5uDLfyM-_0sv2Tm5NRQV6zmBdb0oVJ6kdrDUNTjJiQGIWa1PeqwqTQBNxACPyazx44Bkf8hd3mvZZUkLT1urOq9FPyfT2daz6ShMFZ5dzti4x-CX7V3XBmH6d-3SBEbzTNuXzxTJca1DkN8s_pM5E0r2DKQNPsWVIlRBncIrc99c-TcUZji7lGefdFhHX17eioVDe9-DOXjuf2IA7q_BbM94qYSGmpXCE6n8C9eg7iPi9ZaBm3IioFoKtv-U1L3faaesBQmi9fDPb7_Q"
+        },
+        {
+          "name": "CognitoIdentityServiceProvider.d1grqml0emh7votkb0gtrrn0.36bbabc1-3a45-414c-8cbc-bcc2cc96312d.refreshToken",
+          "value": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.KAzZ_L8_nkcreRl9zoDxlK8AlWCOHVY1wlYjOU5ovyL2JQfSZ91RpZ8GM9YruhCGm5jlr_3aki-srxdmitY5aS2eTq0Nrz1yAUF9T1_25sVu0zit955X_JO8iKzxmomqPuNXeQko1KKIwmuIYe6Nf32o94dU1r1cmf6xvtXIyN2LBJ75NDOa-1xOp0cif1vaX9J1t6qdR0ynlglDuEuUXqkfunfFQCwcibnTzVA8PaF6T9lS5-KveuFzYx24BRZEFaMpJgi1n9SahyGsGDQe759cWIA5dRaY5DAAUuSRMRGRIsKKrpvtcSnzbrurB4nD3pYDLzFfHbg-kHaq0W-RYA.USmO0dOQwgKsULi_.yKsK-U-D7HyRV8EAHsBRKpkdDzSWteKweKdw0b9ei-ONMAqoBPx9eAEcIrm4ryZQtdq7YypjMPwxD7qPsfX4jY26KWZHeVz-eowUEfZc4kljW3pB8O-Q1WAWhV-Pb1Cd81CQWHgdvE4pYnLexjs3oc8LZMPT93Pk4K90UIpzPiNgftPA4hAazasDHUq1EvMDd_S5J1_j38N5lKM4XtkIRV00WVofM-IaVhL5orfCx4J5FqN3NMmGfSxFYPr0W0_JAmmaRT5Z8cPWNtgdfLcJUdM3dR2FPR6Vq8vpZp0V8CAjIkXRU6XskGFo2v96bI4avpoBkNqjTZ9lWOB6lPUnc-98UI8Tg6TPw_wqV6OSqo7fPn-2hdVHUJGYbmXZcss2vXo9Y-qo1ihZIxFxVN4H4FlMFvfwIw5RhuUEhcx4DnaCFNbx26Xsfn_UPAbgjJWo763bzwjna75HeL516qprKFtkzO4Vc9bYq6njxEgY-mxiVB25GVxJJAUPIGVhk_g8EbbCHPWWPt7mekvAmbaDxCPxJKq9i-RgKUNhKp0OpbLeFABtJoxXsShqS-gvAYkeYiBvDPq9QHx6W4EMlLelPQcACbwGvU_L5ivGziB734sDmEgn8OoRMqNsMVQoLALOK7kjCQ26EpUUic7IspuEFd1yhRw1MHcx4WvM5f2qqvB9YtTSGjCxkD5x6umqAR30AIdiD1-qnZPWyC52fqBYWo0MmJl4jjPzbYND4_6bQ1iVEHZ2KoJ4oKHCF08sDg9wkZrKx2vrhW661BX1_m-P0d9NU5gLKmfqFL-XfelY9WI9fmKWHym7SDBDxV5MGqN0VulMx1FxwQCloD7jCE_pflbcQN85QicuTWOXRLQozsV1-IvhFXCaoJuOY23fOpm9L1mN7Uhudbc2Xru7c3-XYr7I73wyd2XR_E889QZm789DFXL0ha5vLq_pua0RSTwdciHbHU_MdROwRTtuqj9A9juzr-NjF4zKUyZq7_IIezjRRjslJ_B7SfAnULd42ME6PDAHSDTZQJPiD3pxmP3NDxnnrxVm9eW0dqZdAP4BSx9OY_aU9m9iBXToLOKY6PyCx4w39vhUts8MHBMpvOn_Q4uo1khM6_FcswAdiLpZ6dTyKtl0RTyBAtbWbnVB4lKypnbmtUD70tIsVX58OMjQxhd62ZNNaIJzBYvrIfHIBf27kbAEBZyxNfvUIJw8FUKl3YVjyS1pxv9AoXE6f9UN4-n6U2hzU2OBfCyyBKqnlvWVdCHVmjQ9qA8aQLPoRv5uWki9CAwO-C5z7zLv-fjebdmBb7pErRlCptTQr56VE_0QYi2KRsKGjRgg.k4d6ZELeyRqsf641X_-rTQ"
         },
         {
           "name": "snconsent_geo",
           "value": "eyJjb3VudHJ5IjoibnoiLCJyZWdpb24iOiJhdWsifQ=="
         },
         {
+          "name": "CognitoIdentityServiceProvider.d1grqml0emh7votkb0gtrrn0.36bbabc1-3a45-414c-8cbc-bcc2cc96312d.clockDrift",
+          "value": "0"
+        },
+        {
+          "name": "preferredmode",
+          "value": "null"
+        },
+        {
           "name": "snconsent_geo_exp",
-          "value": "1750333487888"
+          "value": "1750373480637"
         },
         {
           "name": "preferredpagemode",
