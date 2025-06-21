@@ -1,5 +1,4 @@
 import type { Page, Locator } from "@playwright/test";
-import { STORAGE_STATE_PATH } from "../playwright.config";
 
 export class LoginPage {
   private readonly emailInput: Locator;
