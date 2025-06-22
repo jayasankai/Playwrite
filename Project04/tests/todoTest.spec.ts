@@ -54,6 +54,8 @@ test.describe("Perform Todo page tests", () => {
     await todoPage.addTodo(""); // Attempt to add an empty todo
     // Verify that the todo list does not contain an empty todo
     expect(await todoPage.getTodos()).not.toContain("");
+    expect(await todoPage.isEmptyTodoValidationVisible()).toBe(true);
+
   });
 
   test("should not allow editing to empty 'todo's", async ({ todoPage }) => {
@@ -65,9 +67,11 @@ test.describe("Perform Todo page tests", () => {
     await todoPage.editTodo("Test-Todo-Edit-Empty", "");
     await todoPage.page.waitForLoadState("networkidle");
 
+    // wait for the todo to be deleted
+    await todoPage.page.waitForTimeout(3000);
+
     // Verify that the todo list still contains the original text
     expect(await todoPage.getTodos()).toContain("Test-Todo-Edit-Empty");
-    expect(await todoPage.isEmptyTodoValidationVisible()).toBe(true);
 
     // Clean up after test
     await todoPage.deleteTodo("Test-Todo-Edit-Empty");
