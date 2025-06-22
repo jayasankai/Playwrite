@@ -5,6 +5,7 @@ export class TodoPage {
   private readonly todoInput: Locator;
   private readonly addButton: Locator;
   private readonly todoList: Locator;
+  private readonly saveButton: Locator;
 
   private readonly logoutButton: Locator;
 
@@ -13,6 +14,7 @@ export class TodoPage {
     this.todoInput = this.page.getByRole("textbox", { name: "Add a new todo" });
     this.addButton = this.page.getByRole("button", { name: "Add" });
     this.todoList = this.page.getByRole("list");
+    this.saveButton = this.page.getByRole("button", { name: "Save" });
     this.logoutButton = this.page.getByRole("button", { name: "Logout" });
   }
 
@@ -37,23 +39,32 @@ export class TodoPage {
     await todoItem.click();
     await todoItem.getByRole("button", { name: "Edit" }).click();
     await this.todoList.getByRole("textbox").fill(newText);
-    await this.page.getByRole("button", { name: "Save" }).click();
+    await this.saveButton.click();
   }
 
   async deleteTodo(todoText: string) {
+    // Find the list item containing the todo text
     const todoItem = this.todoList
-      .getByRole("listitem")
-      .filter({ hasText: todoText });
-    await todoItem.click();
-    const deleteButton = todoItem.getByRole("button", { name: "Delete" });
+      .locator(".todo-item")
+      .filter({
+        has: this.page.locator(".todo-item-content span", {
+          hasText: todoText,
+        }),
+      })
+      .first();
+
+    // Click the delete button inside this todo item
+    const deleteButton = todoItem.locator("button", { hasText: "Delete" });
     await deleteButton.click();
   }
 
   async getTodos(): Promise<string[]> {
-    const todoItems = await this.todoList.locator("li").all();
+    const todoSpans = await this.todoList
+      .locator(".todo-item-content span")
+      .all();
     const todos: string[] = [];
-    for (const item of todoItems) {
-      const text = await item.textContent();
+    for (const span of todoSpans) {
+      const text = await span.textContent();
       if (text) {
         todos.push(text.trim());
       }
