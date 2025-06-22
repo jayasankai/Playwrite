@@ -28,10 +28,25 @@ test.describe("Perform Todo page tests", () => {
 
     await todoPage.deleteTodo("Test-Todo");
     await todoPage.page.waitForLoadState("networkidle");
-    
+
     // wait for the todo to be deleted
     await todoPage.page.waitForTimeout(3000);
 
     expect(await todoPage.getTodos()).not.toContain("Test-Todo");
+  });
+
+  test("should be able to edit 'todo's", async ({ todoPage }) => {
+    await todoPage.goto();
+
+    await todoPage.addTodo("Test-Todo-Edit");
+    await todoPage.page.waitForLoadState("networkidle");
+
+    await todoPage.editTodo("Test-Todo-Edit", "Edited-Todo");
+    await todoPage.page.waitForLoadState("networkidle");
+
+    expect(await todoPage.getTodos()).toContain("Edited-Todo");
+
+    // clean up after test
+    await todoPage.deleteTodo("Edited-Todo");
   });
 });
