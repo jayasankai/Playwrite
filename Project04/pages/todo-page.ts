@@ -6,8 +6,8 @@ export class TodoPage {
   private readonly addButton: Locator;
   private readonly todoList: Locator;
   private readonly saveButton: Locator;
-
   private readonly logoutButton: Locator;
+  private readonly emptyTodoValidationText: Locator;
 
   constructor(public readonly page: Page) {
     this.todoListTitle = this.page.getByRole("heading", { name: "Todo List" });
@@ -16,6 +16,11 @@ export class TodoPage {
     this.todoList = this.page.getByRole("list");
     this.saveButton = this.page.getByRole("button", { name: "Save" });
     this.logoutButton = this.page.getByRole("button", { name: "Logout" });
+    this.emptyTodoValidationText = this.page.getByText(
+      "Todo cannot be empty.",
+      { exact: true }
+    );
+
   }
 
   async goto() {
@@ -58,6 +63,10 @@ export class TodoPage {
     await deleteButton.click();
   }
 
+  async isEmptyTodoValidationVisible(): Promise<boolean> {
+    return this.emptyTodoValidationText.isVisible();
+  }
+
   async getTodos(): Promise<string[]> {
     const todoSpans = await this.todoList
       .locator(".todo-item-content span")
@@ -70,5 +79,9 @@ export class TodoPage {
       }
     }
     return todos;
+  }
+
+  async logout() {
+    await this.logoutButton.click();
   }
 }
